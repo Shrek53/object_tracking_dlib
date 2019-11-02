@@ -17,7 +17,11 @@ sudo apt-get install libx11-dev libgtk-3-dev
 ```bash
 pip install -r requirements.txt
 ```
-**Run object tracking program**
+**Run object tracking program from webcam**
 ```bash
 python track_object.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt --model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --label person --output output/result_output.avi
+```
+**Run object tracking program from input file**
+```bash
+python track_object.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt --model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --video input/race.mp4 --label person --output output/vid_output.avi
 ```
